@@ -1,1 +1,1 @@
-![logo](/docs/assets/images/ABPSL.png = 250x)
+<img src="/docs/assets/images/ABPSL.png" width=20%>
