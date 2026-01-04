@@ -1,1 +1,1 @@
-![logo](/docs/assets/images/ABPSL.png)
+![logo](/docs/assets/images/ABPSL.png = 250x)
