@@ -1,1 +1,0 @@
-<img src="/docs/assets/images/ABPSL.png" width=20%>
