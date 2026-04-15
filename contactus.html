@@ -3,41 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All Blacks Property Services Ltd</title>
+    <title>Contact Us — All Blacks Property Services Ltd</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Skip to main content (keyboard/screen reader users) -->
+    <a class="skip-link visually-hidden-focusable" href="#main-content">Skip to main content</a>
+
+    <!-- ── Navbar ─────────────────────────────────────── -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav" aria-label="Main navigation">
       <div class="container">
-        <img src="images/ABPSL.png" width="200px" alt="All Blacks Property Services Ltd" class="img-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/ABPSL.png" style="height: 50px; width: auto;" alt="All Blacks Property Services Ltd — home">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Contact Us</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container my-5">
-      <h1>Building, Renovation and Maintenance Services in Dumfries & Galloway</h1>
-      <div class="col-lg-8 px-0">
-        <img src="images/work5.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <p class="fs-5">Contact us today to discuss your project:</p>
-        <ul>
-          <li class="fs-5">Email: lewblk@live.co.uk</li>
-        </ul>
-        <hr>
-        <p class="fs-6">Copyright © 2026 All Blacks Property Services Ltd</p>
-    </div>
+    <main id="main-content">
+
+      <!-- ── Contact Section ────────────────────────────── -->
+      <section class="section-pad bg-light" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h1 class="section-title" id="contact-heading">Get In Touch</h1>
+              <p class="section-subtitle mb-5">We'd love to hear about your project. Drop us an email and we'll get back to you as soon as possible.</p>
+
+              <div class="contact-card p-4 p-md-5 rounded-3 border">
+                <img src="images/work5.jpg" alt="Example of completed work by All Blacks Property Services" class="img-fluid rounded-3 mb-4 w-100" style="max-height: 260px; object-fit: cover;" loading="lazy">
+
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                  <i class="bi bi-envelope-fill fs-4" aria-hidden="true" style="color: var(--accent)"></i>
+                  <a href="mailto:lewblk@live.co.uk" class="fs-5 text-dark text-decoration-none fw-medium">lewblk@live.co.uk</a>
+                </div>
+
+                <a href="mailto:lewblk@live.co.uk" class="btn btn-accent btn-lg w-100">
+                  <i class="bi bi-envelope me-2" aria-hidden="true"></i>Send Us an Email
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────── -->
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-muted small">&copy; 2026 All Blacks Property Services Ltd. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="list-inline-item ms-3"><a href="contactus.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="main.js"></script>

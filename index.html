@@ -3,23 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All Blacks Property Services Ltd</title>
+    <title>All Blacks Property Services Ltd — Dumfries &amp; Galloway</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Skip to main content (keyboard/screen reader users) -->
+    <a class="skip-link visually-hidden-focusable" href="#main-content">Skip to main content</a>
+
+    <!-- ── Navbar ─────────────────────────────────────── -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav" aria-label="Main navigation">
       <div class="container">
-        <img src="images/ABPSL.png" width="200px" alt="All Blacks Property Services Ltd" class="img-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/ABPSL.png" style="height: 50px; width: auto;" alt="All Blacks Property Services Ltd — home">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
           </ul>
@@ -27,38 +38,126 @@
       </div>
     </nav>
 
-    <div class="container my-5">
-      <h1>Building, Renovation and Maintenance Services in Dumfries & Galloway</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">We are a family owned company offering a wide range of building, renovation and maintenance services to clients in Dumfries & Galloway.</p>
-        <p class="fs-5">Our team of experienced professionals is dedicated to delivering high-quality work and exceptional customer service on every project.</p>
-        <p class="fs-5">We take pride in our work and strive to exceed expectations on every job.</p>
-        <p class="fs-5">Work we undertake includes:</p>
-        <ul>
-          <li>New Builds</li>
-          <li>Extensions</li>
-          <li>Renovations</li>
-          <li>Roofing</li>
-          <li>Joinery</li>
-          <li>Landscaping</li>
-          <li>General Maintenance</li>
-          <li>Tree Surgery</li>
-        </ul>
-        <p class="fs-5"><a href="contactus.html">Contact us</a> today to discuss your project.</p>
-        <hr>
-        <p class="fs-5">Examples of our work</p>
-        <img src="images/work1.jpg" width="400px" alt="Example of our work 1" class="img-fluid mb-3">
-        <img src="images/work2.jpg" width="400px" alt="Example of our work 2" class="img-fluid mb-3">
-        <img src="images/work3.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <img src="images/work4.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <img src="images/work5.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <img src="images/work8.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <img src="images/work7.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <img src="images/work6.jpg" width="400px" alt="Example of our work 3" class="img-fluid mb-3">
-        <hr>
-        <p class="fs-6">Copyright © 2026 All Blacks Property Services Ltd</p>
+    <main id="main-content">
+
+      <!-- ── Hero ───────────────────────────────────────── -->
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative text-center text-white">
+          <p class="hero-tagline">Trusted builders in Dumfries &amp; Galloway</p>
+          <h1 class="hero-title">Quality Builds. Outstanding Results.</h1>
+          <a href="contactus.html" class="btn btn-accent btn-lg">Get a Free Quote</a>
+        </div>
+      </section>
+
+      <!-- ── About + Services ───────────────────────────── -->
+      <section class="section-pad bg-white" aria-labelledby="services-heading">
+        <div class="container">
+
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-7">
+              <h2 class="section-title" id="services-heading">Family-owned. Locally trusted.</h2>
+              <p class="section-subtitle">We are a family-owned company dedicated to delivering high-quality building, renovation and maintenance work with exceptional customer service on every project.</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-house-add"></i></div>
+                <h3 class="service-card-title">New Builds</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-arrows-expand"></i></div>
+                <h3 class="service-card-title">Extensions</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-hammer"></i></div>
+                <h3 class="service-card-title">Renovations</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-building"></i></div>
+                <h3 class="service-card-title">Roofing</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-tools"></i></div>
+                <h3 class="service-card-title">Joinery</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-flower1"></i></div>
+                <h3 class="service-card-title">Landscaping</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-wrench-adjustable"></i></div>
+                <h3 class="service-card-title">General Maintenance</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="service-card h-100 text-center p-4">
+                <div class="service-icon mb-3" aria-hidden="true"><i class="bi bi-tree"></i></div>
+                <h3 class="service-card-title">Tree Surgery</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Gallery ────────────────────────────────────── -->
+      <section class="section-pad bg-light" aria-labelledby="gallery-heading">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title" id="gallery-heading">Our Work</h2>
+            <p class="section-subtitle">A selection of completed projects across Dumfries &amp; Galloway.</p>
+          </div>
+          <div class="gallery-grid" role="list">
+            <div class="gallery-item" role="listitem"><img src="images/work1.jpg" alt="Completed building project 1" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work2.jpg" alt="Completed building project 2" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work3.jpg" alt="Completed building project 3" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work4.jpg" alt="Completed building project 4" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work5.jpg" alt="Completed building project 5" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work6.jpg" alt="Completed building project 6" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work7.jpg" alt="Completed building project 7" loading="lazy"></div>
+            <div class="gallery-item" role="listitem"><img src="images/work8.jpg" alt="Completed building project 8" loading="lazy"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA Banner ─────────────────────────────────── -->
+      <section class="cta-section text-center text-white" aria-labelledby="cta-heading">
+        <div class="container">
+          <h2 class="fw-bold mb-2" id="cta-heading">Ready to start your project?</h2>
+          <p class="mb-4 section-subtitle" style="color: #ccc;">Get in touch today for a free, no-obligation quote.</p>
+          <a href="contactus.html" class="btn btn-accent btn-lg">Contact Us</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────── -->
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-muted small">&copy; 2026 All Blacks Property Services Ltd. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="list-inline-item ms-3"><a href="contactus.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="main.js"></script>
